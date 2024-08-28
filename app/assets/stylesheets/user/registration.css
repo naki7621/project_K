@@ -1,0 +1,13 @@
+.registrations{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign-up{
+  width: 1000px;
+  height: 750px;
+  border: 10px solid green;
+}
