@@ -9,10 +9,10 @@
   </div>
   <ul class="header-light">
     <% if current_user.present? %>
-      <li><%= link_to current_user.name, "#" %></li>
+      <li><%= link_to current_user.name, "#", class: "name" %></li>
     <% else %>
-      <li><%= link_to "ゲストユーザー", "#" %></li>
+      <li><%= link_to "ゲストユーザー", "#", class: "name" %></li>
     <% end %>
-    <li><%= link_to 'ログアウト',"#", data: { turbo_method: :delete } %></li>
+    <li><%= link_to 'ログアウト',"#", data: { turbo_method: :delete }, class: 'logout' %></li>
   </ul>
 <div>
