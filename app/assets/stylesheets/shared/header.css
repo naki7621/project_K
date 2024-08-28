@@ -1,4 +1,32 @@
 .header{
   width: 100vw;
   height: 100px;
+  display: flex;
+}
+
+.title{
+  background-color: gold;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+}
+
+.menu{
+  background-color: salmon;
+  width: 1500px;
+  display: flex;
+  font-size: 50px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-light{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100vw - 1500px - 250px);
+  background-color: aqua;
+  font-size: 25px;
 }
