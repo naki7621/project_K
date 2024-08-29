@@ -31,19 +31,18 @@
 .header-light {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   width: calc(100vw - 1500px - 250px);
   font-size: 25px;
   list-style-type: none;
 }
 
-.name{
+.name {
   color: black;
   text-decoration: none;
-  margin: 5px;
 }
 
-.logout{
+.logout {
   color: black;
   text-decoration: none;
 }
