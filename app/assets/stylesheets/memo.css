@@ -1,0 +1,13 @@
+.memo-main{
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.memo-area{
+  background-color: lightgray;
+  width: 1000px;
+  height: calc(100vh - 100px);
+}
