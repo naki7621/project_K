@@ -1,4 +1,4 @@
-class category < ActiveHash::base
+class Category < ActiveHash::base
   self.data = [
     { id: 1, name: '----' }
     { id: 2, name: '食品' }
@@ -8,4 +8,7 @@ class category < ActiveHash::base
     { id: 6, name: '本' }
     { id: 7, name: 'おもちゃ' }
   ]
+
+  include ActiveHash::Associations
+  has_many :memos
 end
