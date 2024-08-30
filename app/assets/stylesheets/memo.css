@@ -7,7 +7,36 @@
 }
 
 .memo-area{
-  background-color: lightgray;
   width: 1000px;
-  height: calc(100vh - 100px);
+  height: 700px;
+  border: 10px solid lightslategray;
+}
+
+h1 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-area{
+  border: 3px solid black;
+  height: 100px;
+  margin: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-text{
+  font-size: 40px;
+}
+
+.indispensable{
+  color: red;
+}
+.category{
+  background-color: aqua;
+  height: 10px;
+  width: 100px;
 }

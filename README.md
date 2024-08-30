@@ -16,8 +16,8 @@ has_one :book
 | Column             | Type       | Options     |
 | ------------------ | ---------- | ----------- |
 | category_id        | integer    | null: false |
-| text               | text       | null: false |
-| quantity           | integer    | null: false |
+| text               | string     |
+| quantity           | integer    |
 
 belongs_to :user
 
@@ -26,7 +26,7 @@ belongs_to :user
 | Column             | Type       | Options     |
 | ------------------ | ---------- | ----------- |
 | category_id        | integer    | null: false |
-| text               | text       | null: false |
+| text               | text       |
 | price              | integer    | null: false |
 
 belongs_to :user
