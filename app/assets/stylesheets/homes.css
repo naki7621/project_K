@@ -1,5 +1,39 @@
+.main-index{
+  height: auto;
+  width: auto;
+  display: flex;
+}
+
 .side-bar{
   background-color: beige;
   height: calc(100vh - 100px);
   width: 250px;
+}
+
+.memo-index{
+  height: 400px;
+  width: calc(100vw - 250px);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.memo-index-text{
+  height: 140px;
+  width: 300px;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 10px;
+}
+
+.memo-text{
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 20px;
 }

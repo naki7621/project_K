@@ -1,2 +1,22 @@
 <%= render "shared/header" %>
-<div class="side-bar"></div>
+<div class="main-index">
+  <div class="side-bar"></div>
+  <div class="memo-index">
+    <% @memos.each do |memo| %>
+      <div class="memo-index-text">
+        <div class="memo-text">
+          <p>カテゴリー</p>
+          <p><%= memo.category.name %></p>
+        </div>
+        <div class="memo-text">
+          <p>メモ</p>
+          <p><%= memo.text %></p>
+        </div>
+        <div class="memo-text">
+          <p>個数</p>
+          <p><%= memo.quantity %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

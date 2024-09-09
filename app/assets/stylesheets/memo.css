@@ -35,7 +35,22 @@ h1 {
 .indispensable{
   color: red;
 }
+
+.indispensable-A{
+  color: gray;
+}
+
 .category{
   height: 10px;
   width: 100px;
+}
+
+.memo-text{
+  height: 40px;
+  width: 300px;
+}
+
+.ok-area{
+  display: flex;
+  justify-content: center;
 }

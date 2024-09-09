@@ -1,18 +1,35 @@
 <%= render "shared/header" %>
 
 <div class="memo-main">
-  <div class = "memo-area">
-    <h1>メモを追加</h1>
-    <div class="category-area">
-      <div class="category-text">
-        カテゴリー
-        <span class="indispensable">必須</span>
-      </div>
-      <%= form_with model: @memo, local: true do |f| %>
+  <%= form_with model: @memo, local: true do |f| %>
+    <div class = "memo-area">
+      <h1>メモを追加</h1>
+      <div class="category-area">
+        <div class="category-text">
+          カテゴリー
+          <span class="indispensable">必須</span>
+        </div>
         <div class="category">
           <%= f.collection_select(:category_id, Category.all, :id, :name, {}, { class: "select-box", id: "item-category" }) %>
         </div>
-      <% end %>
+      </div>
+      <div class="category-area">
+        <div class="category-text">
+          メモ
+          <span class="indispensable-A">任意</span>
+        </div>
+        <%= f.text_area :text, class:"memo-text", id:"item-name", placeholder:"商品名（必須 15文字まで)", maxlength:"15" %>
+      </div>
+      <div class="category-area">
+        <div class="category-text">
+          個数
+          <span class="indispensable-A">任意</span>
+        </div>
+        <%= f.text_area :quantity, class:"quantity-text", id:"item-name", placeholder:"個数", maxlength:"15" %>
+      </div>
+      <div class="ok-area">
+        <%= f.submit "メモする" ,class:"ok-btn" %>
+      </div>
     </div>
-  </div>
+  <% end %>
 </div>
