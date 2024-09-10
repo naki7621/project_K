@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :homes
 
   resources :memos, only: [:new, :create]
+  resources :books, only: [:new, :create]
 end

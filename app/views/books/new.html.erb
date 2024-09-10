@@ -1,0 +1,35 @@
+<%= render "shared/header" %>
+
+<div class="memo-main">
+  <%= form_with model: @book, local: true do |f| %>
+    <div class = "memo-area">
+      <h1>家計簿</h1>
+      <div class="category-area">
+        <div class="category-text">
+          カテゴリー
+          <span class="indispensable">必須</span>
+        </div>
+        <div class="category">
+          <%= f.collection_select(:category_id, Category.all, :id, :name, {}, { class: "select-box", id: "item-category" }) %>
+        </div>
+      </div>
+      <div class="category-area">
+        <div class="category-text">
+          メモ
+          <span class="indispensable-A">任意</span>
+        </div>
+        <%= f.text_area :text, class:"memo-text", id:"item-name", placeholder:"商品名（必須 15文字まで)", maxlength:"15" %>
+      </div>
+      <div class="category-area">
+        <div class="category-text">
+          値段
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :price, class:"quantity-text", id:"item-name", placeholder:"値段", maxlength:"15" %>
+      </div>
+      <div class="ok-area">
+        <%= f.submit "記録する" ,class:"ok-btn" %>
+      </div>
+    </div>
+  <% end %>
+</div>
