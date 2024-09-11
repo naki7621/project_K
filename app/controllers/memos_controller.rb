@@ -5,7 +5,7 @@ class MemosController < ApplicationController
 
   def create
     @memo = Memo.new(memo_params)
-    @memo.user_id = current_user.id
+    @book.user_id = current_user.id
     if @memo.save
       redirect_to root_path
     else

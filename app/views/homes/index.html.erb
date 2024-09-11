@@ -1,6 +1,18 @@
 <%= render "shared/header" %>
 <div class="main-index">
-  <div class="side-bar"></div>
+  <div class="side-bar">
+    <div class="side-top">
+      <p>今月の合計金額: <%= @total_price %>円</p>
+    </div>
+    <div class="side-all">
+      <div class="category-price">カテゴリーごとの合計金額</div>
+      <ul>
+        <% @category_totals.each do |category_name, total_price| %>
+          <li><%= category_name %> : <%= total_price %>円</li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
   <div class="memo-index">
     <% @memos.each do |memo| %>
       <div class="memo-index-text">
@@ -20,5 +32,5 @@
     <% end %>
   </div>
   <div class="K-index">
-    </div>
+  </div>
 </div>
